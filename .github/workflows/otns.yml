@@ -197,7 +197,7 @@ jobs:
       - name: Bootstrap
         run: |
           sudo apt-get --no-install-recommends install -y lcov
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4.1.7
         with:
           path: coverage/
       - name: Upload Coverage
